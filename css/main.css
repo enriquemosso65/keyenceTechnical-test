@@ -1,0 +1,86 @@
+:root {
+ --fontBlack : #484b4c;
+ --red-keyence: #dc002f;
+ --black-back:#2e3133;
+ --white-keyence: #FAFAFA;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    color: #2e3133;
+    background: linear-gradient(0deg, #c0c0c0 0.5% , #FAFAFA 100%); 
+ 
+}
+ 
+
+.container{
+ display: flex;
+ justify-content: center;
+}
+form{
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+}
+.inputTxt{
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid  #484b4c;
+    outline: 0;
+    font-size: 2rem;
+    color: var(--fontBlack);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+	
+}
+.inputTxt:focus{
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #dc002f, #b66f7d);
+    border-image-slice: 1;
+}
+.inputTxt:focus ~ label{
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.6rem;
+    color: var(--red-keyence);
+    font-weight: 700;
+}
+label{
+    position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: var(--fontBlack);
+}
+
+.listContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newelement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+ 
